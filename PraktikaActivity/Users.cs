@@ -44,7 +44,7 @@ namespace PraktikaActivity
         {
             get
             {
-                string musicPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Users/" + Photo);
+                string musicPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images/" + Photo);
                 return musicPath;
             }
         }

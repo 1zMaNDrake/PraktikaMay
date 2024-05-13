@@ -200,25 +200,21 @@ namespace PraktikaActivity
             if (users.RoleId == 1)
             {
                 Participant participant = new Participant();
-                this.Close();
                 participant.Show();
             }
             if (users.RoleId == 2)
             {
                 Moderator moderator = new Moderator();
-                this.Close();
                 moderator.Show();
             }
             if (users.RoleId == 3)
             {
                 Jury jury = new Jury();
-                this.Close();
                 jury.Show();
             }
             if (users.RoleId == 4)
             {
                 Organaizer organaizer = new Organaizer();
-                this.Close();
                 organaizer.Show();
             }
         }

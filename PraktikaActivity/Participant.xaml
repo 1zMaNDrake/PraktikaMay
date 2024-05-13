@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PraktikaActivity"
         mc:Ignorable="d"
-        Title="Участник"  Height="150" Width="400"
-        MinHeight="150" MinWidth="400">
+        Title="Участник"  Height="200" Width="400"
+        MinHeight="200" MinWidth="400">
     <Grid>
         <StackPanel>
-            <Button Content="Личный кабинет" Click="Button_Click"/>
+            <Button Content="Личный кабинет" Margin="18" Click="Button_Click"/>
             <Button Content="Назад" Click="back_Click"/>
         </StackPanel>
     </Grid>

@@ -196,7 +196,7 @@ namespace PraktikaActivity
                             if (filePath != null)
                             {
                                 string photo = ChangePhotoName();
-                                string dest = Directory.GetCurrentDirectory() + @"\Pictures\" + photo;
+                                string dest = Directory.GetCurrentDirectory() + @"\Images\" + photo;
                                 File.Copy(filePath, dest);
                                 user.Photo = photo;
                             }
@@ -234,11 +234,5 @@ namespace PraktikaActivity
             return newPhotoName;
         }
 
-        private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
-        }
     }
 }

@@ -48,7 +48,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button Grid.Row="3" Content="Авторизация" HorizontalAlignment="Left" x:Name="authorizationBtn" Click="authorization_Click"/>
-        <Button Grid.Row="3" Content="Профиль" HorizontalAlignment="Center"  x:Name="profile" Click="profile_Click"/>
+        <Button Grid.Row="3" Content="Ваша страница" HorizontalAlignment="Center"  x:Name="profile" Click="profile_Click"/>
         <Button Grid.Row="3" Content="Выйти" HorizontalAlignment="Right"   x:Name="back" Click="leave_Click"/>
     </Grid>
 </Window>

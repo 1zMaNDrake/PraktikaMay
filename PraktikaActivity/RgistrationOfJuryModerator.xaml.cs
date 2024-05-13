@@ -140,7 +140,7 @@ namespace PraktikaActivity
                             users.PhoneNumber = phone.Text;
                             users.Email = email.Text;
                             users.Password = password.Password;
-                            users.DirectionID = Convert.ToInt32(direction.Text);
+                            users.DirectionID = direction.SelectedIndex + 1;
                             users.DateOfBirth = new DateTime(1999, 1, 1);
                             if (_filePath != null)
                             {
