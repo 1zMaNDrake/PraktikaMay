@@ -1,0 +1,23 @@
+﻿<Window x:Class="PraktikaActivity.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:captcha="clr-namespace:EasyCaptcha.Wpf;assembly=EasyCaptcha.Wpf"
+        xmlns:local="clr-namespace:PraktikaActivity"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="540" Width="280"
+        MinHeight="540" MinWidth="280">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+        <TextBlock Text="Авторизация" FontSize="30" Margin="15"/>
+        <TextBlock Text="IdNumber" Margin="5"/>
+        <TextBox  x:Name="IdNumber"/>
+        <TextBlock Text="Пароль"  Margin="5"/>
+        <PasswordBox  x:Name="Pass"/>
+        <captcha:Captcha Name="AuthCaptcha"  Height="180" Width="180"/>
+        <TextBox x:Name="Answer"/>
+        <Button Content="Авторизоваться" x:Name="autho" Click="autho_Click"/>
+    </StackPanel>
+    </Grid>
+</Window>
